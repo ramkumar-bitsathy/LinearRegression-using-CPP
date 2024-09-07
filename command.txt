@@ -1,0 +1,4 @@
+g++ -I.\include\ -c .\implementation\algebra.cpp -o .\build\algebra.o
+g++ -I.\include\ -c .\implementation\linearmodel.cpp -o .\build\linearmodel.o
+g++ -I.\include\ -c .\application\main.cpp -o .\build\main.o
+g++ .\build\linearmodel.o .\build\algebra.o .\build\main.o -o runapp
